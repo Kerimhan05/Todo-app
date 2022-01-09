@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+/*Обнуление стилей*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 530px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+body {
+  background-color: #2c3e50;
+}
+
+.main input[type=text] {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  margin: 5px 0px 20px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.main button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: transparent;
+  background-color: #a0a4d9;
+  color: #000;
+  border-radius: 5px;
+}
+
+.main .todo__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .todo__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.main .todo .create label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 15px;
+}
+
+.main .todo__list {
+  margin-top: 30px;
+}
+
+.main .todo__list-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.35);
+}
+
+.main .todo .list__items {
+  margin-top: 20px;
+}
+
+.main .list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.main .list__item button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: transparent;
+  background-color: #a0a4d9;
+  color: #000;
+  border-radius: 5px;
+}
+
+.main .item__action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .item__action input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  line-height: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.main .delete__accomplished {
+  text-decoration: line-through;
+}
+
+.main .item__title {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
